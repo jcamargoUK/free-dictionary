@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
+
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [result, setResult] = useState<any>(null);
@@ -33,11 +35,11 @@ const Search = () => {
 
   return (
     <section>
-      <form>
-        <input type="text" value={searchTerm} placeholder="Search..." onChange={handleChange} />
-        <button type="submit" onClick={(event: React.FormEvent<HTMLFormElement>) => handleSubmit(event)}>Search</button>
-        <button type="reset" onClick={clear}>Clear</button>
-      </form>
+      <form onSubmit={(event: React.FormEvent<HTMLFormElement>) => handleSubmit(event)}>
+      <input type="text" value={searchTerm} placeholder="Search..." onChange={handleChange} />
+      <button type="submit">Search</button>
+      <button type="reset" onClick={clear}>Clear</button>
+    </form>
       {result && (
         <div>
           <h2>{result.word}</h2>
