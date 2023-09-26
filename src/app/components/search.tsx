@@ -39,9 +39,9 @@ const Search = () => {
   return (
     <section>
       <form onSubmit={(event: React.FormEvent<HTMLFormElement>) => handleSubmit(event)}>
-        <section className="flex flex-row align-center text-center bg-slate-600 w-auto h-auto">
-          <input className="flex bg-slate-100 w-50 h-10 mt-8 text-gray-500 rounded-l-xl align-middle" type="text" value={searchTerm} placeholder="Search..." onChange= {handleChange} />
-          <button type="submit" className="bg-slate-100 h-10 w-20 align-middle rounded-r-xl">S</button>
+        <section className="flex flex-row align-center align-middle w-auto h-auto m-0 mt-10 ">
+          <input className="flex bg-slate-100 w-50 h-10 mt-8 text-gray-500 rounded-l-3xl pl-6 align-middle focus:outline-none" type="text" value={searchTerm} placeholder="Search..." onChange= {handleChange} />
+          <button type="submit" className="bg-slate-100 h-10 w-20 align-middle rounded-r-3xl">S</button>
         </section>
         <button type="reset" onClick={clear}>Clear</button>
         
