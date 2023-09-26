@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Search from './components/search'
-import axios from 'axios'
+
 
 
 
@@ -8,8 +8,8 @@ import axios from 'axios'
 export default function Home() {
    
   return (
-     <section>
-        <h1>Free Dictionary</h1>
+     <section className='flex items-center flex-col'>
+        
          <Search />
      </section>
   )
