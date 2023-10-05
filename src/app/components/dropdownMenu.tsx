@@ -3,7 +3,7 @@
 import React from "react"
 import { useState, useMemo } from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react"
-
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 
 export default function DropdownComponent() {
@@ -16,11 +16,11 @@ export default function DropdownComponent() {
   };
 
   return (
-    <section className="ml-40">
+    <section className="ml-20">
       <Dropdown>
         <DropdownTrigger>
-          <Button variant="bordered" className="capitalize">
-            {selectedValue} ▼
+          <Button variant="bordered" className="capitalize flex gap-4">
+            {selectedValue} <MdOutlineKeyboardArrowDown className="h-10 w-10 text-gray-600 border-r-2 pr-2" />
           </Button>
         </DropdownTrigger>
         <DropdownMenu
@@ -29,7 +29,8 @@ export default function DropdownComponent() {
           disallowEmptySelection
           selectionMode="single"
           selectedKeys={selectedKeys}
-          onSelectionChange={handleSelectionChange}
+          onSelectionChange={(keys: Iterable<string>) => handleSelectionChange(new Set(keys))}
+
         >
           <DropdownItem key="serif">Serif</DropdownItem>
           <DropdownItem key="mono">Mono</DropdownItem>
