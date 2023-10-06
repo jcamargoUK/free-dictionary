@@ -16,8 +16,7 @@ export default function Home() {
                   role="switch"
                   id="flexSwitchCheckDefault"
                   onClick={() => setDarkMode(!darkMode)}
-          />
-          
+          /> 
         </section>
         <Nav />
         <Search />
