@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 const Nav = () => {
   return (
-      <section className=" flex w-80 mt-8 mb-2">
+      <section className=" flex w-80 mt-[-1.5rem] mb-2">
         <BiBook className="w-10 h-10 dark:text-pink-600" />
         <DropdownComponent /> 
       </section>

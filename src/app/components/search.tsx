@@ -43,7 +43,7 @@ const Search = () => {
           handleSubmit(event)
         }
       >
-        <section className="flex flex-row align-center align-middle w-auto h-auto m-0 mt-10 ">
+        <section className="flex flex-row align-center align-middle w-auto h-auto m-0 ">
           <input
             className="flex bg-slate-100 w-50 h-12 text-gray-500 rounded-l-2xl pl-6 align-middle focus:outline-none"
             type="text"
@@ -76,8 +76,6 @@ const Search = () => {
               <div className=" w-full ml-4 bg-slate-500 h-[1px] m-auto"></div>
             </section>
             <p>{result.meanings[0]?.definitions[0]?.definition}</p>
-            <h3>Example</h3>
-            <p>{result.meanings[0]?.definitions[0]?.example}</p>
           </section>
           <section>
             <br />
@@ -86,8 +84,6 @@ const Search = () => {
               <div className=" w-full ml-4 bg-slate-500 h-[1px] m-auto"></div>
             </section>
             <p>{result.meanings[0]?.definitions[1]?.definition}</p>
-            <h3>Example</h3>
-            <p>{result.meanings[0]?.definitions[1]?.example}</p>
           </section>
           <section>
             <br />
@@ -96,8 +92,6 @@ const Search = () => {
               <div className=" w-full ml-4 bg-slate-500 h-[1px] m-auto"></div>
             </section>
             <p>{result.meanings[0]?.definitions[2]?.definition}</p>
-            <h3>Example</h3>
-            <p>{result.meanings[0]?.definitions[2]?.example}</p>
           </section>
         </div>
       )}

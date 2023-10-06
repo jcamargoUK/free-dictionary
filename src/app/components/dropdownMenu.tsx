@@ -18,7 +18,7 @@ export default function DropdownComponent() {
   };
   
   return (
-    <section className="ml-20 dark:text-pink-600">
+    <section className="ml-10 dark:text-pink-600">
       <Dropdown>
         <DropdownTrigger>
           <Button variant="bordered" className="capitalize flex gap-4">
