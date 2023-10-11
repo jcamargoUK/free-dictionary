@@ -4,6 +4,7 @@ import Search from "./components/search";
 import Nav from "./components/nav";
 import { useState } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import Footer from "./components/footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +22,7 @@ export default function Home() {
         </section>
         <Nav /> 
         <Search />
+        <Footer />
       </section>
     </div>
   );
