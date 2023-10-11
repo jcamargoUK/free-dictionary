@@ -18,11 +18,11 @@ export default function DropdownComponent() {
   };
   
   return (
-    <section className="ml-10 dark:text-pink-600">
+    <section className="ml-10 text-pink-600">
       <Dropdown>
         <DropdownTrigger>
           <Button variant="bordered" className="capitalize flex gap-4">
-            {selectedValue} <MdOutlineKeyboardArrowDown className="h-10 w-10 text-gray-600 border-r-2 pr-2 dark:text-pink-600 dark:border-r-pink-600" />
+            {selectedValue} <MdOutlineKeyboardArrowDown className="h-10 w-10 border-r-2 pr-2 text-pink-600 border-r-pink-600" />
           </Button>
         </DropdownTrigger>
         <DropdownMenu
@@ -32,9 +32,9 @@ export default function DropdownComponent() {
           selectionMode="single"
           selectedKeys={selectedKeys}
           onSelectionChange={(keys) => handleSelectionChange(keys)}>
-          <DropdownItem key="serif">Serif</DropdownItem>
-          <DropdownItem key="mono">Mono</DropdownItem>
-          <DropdownItem key="sans serif">Sans Serif</DropdownItem>
+          <DropdownItem key="serif" className=" text-pink-600">Serif</DropdownItem>
+          <DropdownItem key="mono" className=" text-pink-600">Mono</DropdownItem>
+          <DropdownItem key="sans serif" className=" text-pink-600">Sans Serif</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </section>

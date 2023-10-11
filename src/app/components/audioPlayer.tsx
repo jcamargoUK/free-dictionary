@@ -28,7 +28,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
   };
 
   return (
-    <div className="relative bg-pink-300 w-14 h-14 rounded-full">
+    <div className="relative bg-pink-600 w-12 h-12 rounded-full text-gray-800">
       <audio ref={audioRef} preload="auto">
         <source src={audioSrc} type="audio/mpeg" />
         Your browser does not support the audio element.
@@ -37,7 +37,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
         onClick={toggleAudio}
         className="absolute top-0 left-0 bg-transparent border-none cursor-pointer"
       >
-        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} className="text-4xl absolute left-4 top-3" />
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} className="text-3xl absolute left-4 top-[.6rem]" />
       </button>
     </div>
   );
