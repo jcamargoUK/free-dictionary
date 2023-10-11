@@ -17,8 +17,7 @@ export default function Footer() {
       flex-row
       m-auto 
       text-center
-      py-4
-      mt-32
+      mb-0
       
       "
       
