@@ -31,10 +31,12 @@ export default function DropdownComponent() {
           disallowEmptySelection
           selectionMode="single"
           selectedKeys={selectedKeys}
-          onSelectionChange={(keys) => handleSelectionChange(keys)}>
-          <DropdownItem key="serif" className=" text-pink-600">Serif</DropdownItem>
-          <DropdownItem key="mono" className=" text-pink-600">Mono</DropdownItem>
-          <DropdownItem key="sans serif" className=" text-pink-600">Sans Serif</DropdownItem>
+          onSelectionChange={(keys) => handleSelectionChange(keys)}
+          className="bg-yellow-400 dark:bg-black w-32 m-auto h-36 flex flex-col justify-center items-center"
+          >  
+          <DropdownItem key="serif" className=" text-pink-600 m-auto">Serif</DropdownItem>
+          <DropdownItem key="mono" className=" text-pink-600 m-auto">Mono</DropdownItem>
+          <DropdownItem key="sans-serif" className=" text-pink-600 m-auto">Sans Serif</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </section>
